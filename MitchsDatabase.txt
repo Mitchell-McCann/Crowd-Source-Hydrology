@@ -1,0 +1,10 @@
+Username: tud46355
+Password: caexieje
+
+Database: FA13_2305_tud46355
+
+Please do any changes to the database on my database when you are finished your work for the day, assuming it isn't a complete change in schema.
+
+using putty shell:
+mysql -utud46355 -hcis-linux2.temple.edu -p
+caexieje
