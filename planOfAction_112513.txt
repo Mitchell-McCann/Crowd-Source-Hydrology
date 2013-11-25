@@ -1,0 +1,28 @@
+Mitchell:
+  Work on equipment.php pages and data.php
+  
+Tori:
+  Work on users.php and research QR codes
+  
+Flow chart:
+Index:
+      Admin ->
+          Admin.php  //MENU WITH TWO OPTIONS
+              Manage Locations ->
+                  equipment.php //DISPLAY TABLE OF EQUIPMENT
+                      Add New Location ->
+                          newEquipment.php //ADD NEW OPCODE TYPE AND NEW EQUIPMENT
+                      View Existing Location ->
+                          equipmentData.php //VIEW THE DATA PERTINENT TO ONE EQUIPMENT PIECE
+                          
+              Manage Users ->
+                  browseUsers.php //EDIT USERS - ADD/DELETE/UPDATE
+                      
+          
+              
+      Users ->
+          home.php  //MENU WITH TWO OPTIONS TO VIEW DATA OR INPUT 
+                view Data ->
+                    viewData.php  //JUST DISPLAY THE DATA (similar to equipment.php, but no admin functions)
+                scanner ->
+                    scan.php  //JUST SCANS THE QR CODE TO INPUT DATA
