@@ -1,0 +1,25 @@
+<?php
+        include ("config.php");
+?>
+<html>
+        <head>
+        </head>
+        <body>
+
+                <form method="GET" action="newEquip.php">
+                        <label>New Equipment Name:</label><input type="text" name="equipName" />
+                        <label>OP Code:</label><select name="opCode">
+                                <?php
+                                        $sql = "Select * From Operations";
+                                        $result = mysql_query($sql,$connection);
+
+                                        while($row = mysql_fetch_array($result))
+                                        {
+                                                $desc = $row['description'];
+                                                echo("<option value='$desc'>$desc</option>");
+                                        }
+                                ?>
+                        </select>
+                </form>
+        </body>
+</html>
