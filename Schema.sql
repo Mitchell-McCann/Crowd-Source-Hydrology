@@ -12,7 +12,7 @@ CREATE TABLE Operations (
 CREATE TABLE Equipment (
   id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
   qrCode BLOB,
-  gps POINT,
+  gps VARCHAR (100),
   opCode INT, 
   FOREIGN KEY (opCode) references Operations(id)
 );
@@ -30,7 +30,6 @@ CREATE TABLE Users (
 CREATE TABLE Transaction (
   id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
   timeDate TIMESTAMP,
-  opCode INTEGER,
   gps POINT,
   idEquip INTEGER,
   F1 VARCHAR (50),
@@ -39,6 +38,5 @@ CREATE TABLE Transaction (
   F4 VARCHAR (50),
   F5 VARCHAR (50),
   F6 VARCHAR (50),
-  FOREIGN KEY (opCode) references Operations(id),
   FOREIGN KEY (idEquip) references Equipment(id)
 ); 
